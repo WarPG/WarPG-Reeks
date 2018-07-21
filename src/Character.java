@@ -2,6 +2,7 @@ import java.io.Reader;
 import java.net.*;
 import java.sql.*;
 import java.util.Properties;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Character {
 
@@ -122,10 +123,34 @@ public class Character {
             Connection con = getConnection();
             PreparedStatement stmt = con.prepareStatement("SELECT * FROM hero WHERE hero_id="+id);
             ResultSet rs = stmt.executeQuery();
-            return new Character(rs.getInt(1),rs.getCharacterStream(2),rs.getInt(3)
+            Character chr = new Character(rs.getInt(1),rs.getCharacterStream(2),rs.getInt(3)
                                 ,rs.getInt(4) ,rs.getInt(5) ,rs.getInt(6) ,rs.getInt(7)
                     ,rs.getInt(8) ,rs.getInt(9) ,rs.getInt(10) ,rs.getInt(11) ,rs.getInt(12)
                     ,rs.getCharacterStream(13) ,rs.getInt(14));
+            con.close();
+            return chr;
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public Character newCharacter(String id, String password,String name){
+        try {
+            Class.forName("org.postgresql.Driver");
+            Connection con = getConnection();
+            PreparedStatement stmt = con.prepareStatement("INSERT INTO hero VALUES (id,password,nextval('hero_id'),name,1,0,1,1,1,0,1,1,1,1)");
+            stmt.executeQuery();
+            PreparedStatement stmt2 = con.prepareStatement("SELECT * FROM hero WHERE lastval(hero_id)");
+            ResultSet rs = stmt2.executeQuery();
+            Character chr = getCharacter(rs.getInt("hero_id"));
+            con.close();
+            return chr;
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
