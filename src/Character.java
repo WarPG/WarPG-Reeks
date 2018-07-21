@@ -90,15 +90,11 @@ public class Character {
 	public void setLuck(int luck) {
 		this.luck = luck;
 	}
-	public  String getcClass(){return cClass;}
-    public void setcClass(String cClass){this.cClass=cClass;}
-	public int getMs(){return ms;}
-	public void setMs(int ms){this.ms=ms;}
     public int getId() {return id;}
     public void setId(int id) { this.id = id; }
 
 	public Character(int hero_id, Reader name, int dexterity, int experience, int  health, int  defense, int hit_points ,
-                     int  gold , int  charisma , int  attack , int  strength , int  luck , Reader cClass , int  ms){
+                     int  gold , int  charisma , int  attack , int  strength , int  luck ){
 	    this.id=hero_id;
 	    this.name=name.toString();
 	    this.dexterity=dexterity;
@@ -124,8 +120,7 @@ public class Character {
             ResultSet rs = stmt.executeQuery();
             Character chr = new Character(rs.getInt(1),rs.getCharacterStream(2),rs.getInt(3)
                                 ,rs.getInt(4) ,rs.getInt(5) ,rs.getInt(6) ,rs.getInt(7)
-                    ,rs.getInt(8) ,rs.getInt(9) ,rs.getInt(10) ,rs.getInt(11) ,rs.getInt(12)
-                    ,rs.getCharacterStream(13) ,rs.getInt(14));
+                    ,rs.getInt(8) ,rs.getInt(9) ,rs.getInt(10) ,rs.getInt(11) ,rs.getInt(12));
             con.close();
             return chr;
 
