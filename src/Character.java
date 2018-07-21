@@ -1,11 +1,12 @@
 import java.io.Reader;
 import java.net.*;
 import java.sql.*;
+import java.util.Properties;
 
 public class Character {
 
-    public static void main(String [] args){
-        System.out.println(System.getenv("JDBC_DATABASE_URL"));
+    public static void main(String [] args) throws URISyntaxException, SQLException {
+        getConnection();
     }
     private int id;
 	private int dexterity;
@@ -130,14 +131,28 @@ public class Character {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
         }
         return null;
     }
 
-    private static Connection getConnection() throws SQLException {
-        String dbUrl = System.getenv("JDBC_DATABASE_URL");
-        return DriverManager.getConnection(dbUrl);
-    }
+    private static Connection getConnection() throws URISyntaxException, SQLException {
+        try {
+            String url = "jdbc:postgresql://ec2-54-217-235-166.eu-west-1.compute.amazonaws.com:5432/dej96gpmnq6f0e?user=ylvpctvunmtdxy&password=3bd1b5b109dbc9bb61e8eb4e8daaf4add1d6b94f453298578315ade51a57614e&ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory";
+            Properties props = new Properties();
+            props.setProperty("user", "ylvpctvunmtdxy");
+            props.setProperty("password", "3bd1b5b109dbc9bb61e8eb4e8daaf4add1d6b94f453298578315ade51a57614e");
+            props.setProperty("ssl", "true");
+            return DriverManager.getConnection(url, props);
+        } catch (SQLException e) {
+
+            System.out.println("Connection Failed! Check output console");
+            e.printStackTrace();
+            return null;
+        }
+	}
+
 
 
 
