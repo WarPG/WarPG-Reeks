@@ -1,5 +1,5 @@
 import java.util.Random;
-import java.util.concurrent.TimeUnit:
+import java.util.concurrent.TimeUnit;
 import java.util.Scanner;
 
 public class Main {
@@ -40,7 +40,7 @@ public class Main {
             }else if (map.get(guy_x, guy_y) == 1){
                 log = "enemy";
                 System.out.println(log);
-                Mob mob = new mob(level, guy_x, guy_y);
+                Mob mob = new Mob(level, guy_x, guy_y);
                 combat(mob);
             }else if (map.get(guy_x, guy_y) == 10){
                 log = "item";
@@ -61,48 +61,51 @@ public class Main {
 
     }
 
-    private static int combat(Mob mob){
+    private static int combat(Mob mob) {
         Random r = new Random();
         boolean turn = true;
-        int pos = r.nextInt(9)+1;
-        if (pos > 5){
+        int pos = r.nextInt(9) + 1;
+        if (pos > 5) {
             log = "You see a monster. Attack him!";
             System.out.println(log);
-        }
-        else{
+        } else {
             log = "HE IS SO CLOSE AAGGHHH!";
             System.out.println(log);
             turn = false;
         }
-        while (guy.getHealth() > 0  && mob.getHealth() > 0)){
-            if (turn){
+        while (guy.getHealth() > 0 && mob.getHealth() > 0) {
+            if (turn) {
                 int str = guy.getStrength();
-                int roll = r.nextInt(100)+1;
+                int roll = r.nextInt(100) + 1;
 
                 if (roll > 80 - (guy.getAttack() - mob.getDefence())) {
-                    if (roll == 100){
-                        mob.setHealth(mob.getHealth() - 2*guy.getStrength());
-                    }
-                    else{
+                    if (roll == 100) {
+                        mob.setHealth(mob.getHealth() - 2 * guy.getStrength());
+                    } else {
                         mob.setHealth(mob.getHealth() - guy.getStrength());
                     }
                 }
-            }else {
-                int roll = r.nextInt(100)+1;
+            } else {
+                int roll = r.nextInt(100) + 1;
 
-                if (roll > 80 - (mob.getAttack() - guy.getDefence())) {
-                    if (roll == 100){
-                        guy.setHealth(guy.getHealth() - 2*mob.getStrength());
-                    }
-                    else{
+                if (roll > 80 - (mob.getAttack() - guy.getDefense())) {
+                    if (roll == 100) {
+                        guy.setHealth(guy.getHealth() - 2 * mob.getStrength());
+                    } else {
                         guy.setHealth(guy.getHealth() - mob.getStrength());
                     }
                 }
             }
-            TimeUnit.SECONDS.sleep(1);
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
 
+            return 0;
+
+        }
         return 0;
-
     }
 
     private static void levelup(){

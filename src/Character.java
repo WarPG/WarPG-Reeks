@@ -6,8 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Character {
 
-    public static void main(String [] args) throws URISyntaxException, SQLException {
-        getConnection();
+    public static void main(String[] args) throws URISyntaxException, SQLException {
     }
     private int id;
 	private int dexterity;
@@ -116,7 +115,7 @@ public class Character {
 	    this.ms=ms;
     }
 	
-	
+	public Character(){}
 	public Character getCharacter(int id){
         try {
             Class.forName("org.postgresql.Driver");
