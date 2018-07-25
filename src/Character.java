@@ -89,6 +89,35 @@ public class Character {
 		this.luck = luck;
 	}
 
+    public int getHero_id() {
+        return hero_id;
+    }
+
+    public void setHero_id(int hero_id) {
+        this.hero_id = hero_id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+
     public Character(Reader id, Reader password, int hero_id, Reader name, int dexterity, int experience, int health, int defense, int hit_points,
                      int  gold , int  charisma , int  attack , int  strength , int  luck ){
         this.id = id.toString();
@@ -122,18 +151,6 @@ public class Character {
         this.attack = 10;
         this.strength = 10;
         this.luck = 10;
-    }
-
-    public int getHero_id() {
-        return hero_id;
-    }
-
-    public void setHero_id(int hero_id) {
-        this.hero_id = hero_id;
-    }
-
-    public String getName() {
-        return name;
     }
 
 	public Character getCharacter(int id){
@@ -183,21 +200,5 @@ public class Character {
             e.printStackTrace();
         }
         return null;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 }
