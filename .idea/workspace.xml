@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a4d0c5f-e05f-4e42-b979-e8cd92556ebe" name="Default" comment="Moved Connection methods to a new class.">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Connect.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Player.java" />
+    <list default="true" id="5a4d0c5f-e05f-4e42-b979-e8cd92556ebe" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/production/warpg/Character.class" afterPath="$PROJECT_DIR$/out/production/warpg/Character.class" />
-      <change beforePath="$PROJECT_DIR$/src/Character.java" afterPath="$PROJECT_DIR$/src/Character.java" />
-      <change beforePath="$PROJECT_DIR$/src/Mob.java" afterPath="$PROJECT_DIR$/src/Mob.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,15 +19,15 @@
         <entry file="file://$PROJECT_DIR$/src/Character.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="393">
-              <caret line="156" column="5" lean-forward="true" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
+              <caret line="154" column="5" lean-forward="true" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
               <folding>
                 <element signature="method#Character#0;class#Character#0" expanded="false" />
-                <marker date="1532545994198" expanded="true" signature="2801:2834" ph="SELECT * FRO... hero" />
-                <marker date="1532545994198" expanded="true" signature="3653:3698" ph="INSERT INTO hero... " />
-                <marker date="1532545994198" expanded="true" signature="3653:3734" ph="INSERT INTO hero... " />
-                <marker date="1532545994198" expanded="true" signature="3831:3849" ph="SELECT * FRO... hero" />
-                <marker date="1532545994198" expanded="true" signature="3831:3855" ph="SELECT * FRO... hero" />
-                <marker date="1532545994198" expanded="true" signature="3831:3872" ph="SELECT * FRO... hero" />
+                <marker date="1532546179575" expanded="true" signature="2773:2806" ph="SELECT * FRO... hero" />
+                <marker date="1532546179575" expanded="true" signature="3625:3670" ph="INSERT INTO hero... " />
+                <marker date="1532546179575" expanded="true" signature="3625:3706" ph="INSERT INTO hero... " />
+                <marker date="1532546179575" expanded="true" signature="3803:3821" ph="SELECT * FRO... hero" />
+                <marker date="1532546179575" expanded="true" signature="3803:3827" ph="SELECT * FRO... hero" />
+                <marker date="1532546179575" expanded="true" signature="3803:3844" ph="SELECT * FRO... hero" />
               </folding>
             </state>
           </provider>
@@ -83,11 +79,11 @@
         <entry file="file://$PROJECT_DIR$/src/Mob.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="211">
-              <caret line="73" column="9" lean-forward="false" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+              <caret line="72" column="9" lean-forward="false" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1532545994207" expanded="true" signature="1281:1329" ph="SELECT colum... " />
-                <marker date="1532545994207" expanded="true" signature="1281:1330" ph="SELECT * FRO... mob" />
+                <marker date="1532546179363" expanded="true" signature="1245:1293" ph="SELECT colum... " />
+                <marker date="1532546179363" expanded="true" signature="1245:1294" ph="SELECT * FRO... mob" />
               </folding>
             </state>
           </provider>
@@ -369,12 +365,20 @@
       <updated>1532178872716</updated>
       <workItem from="1532178876018" duration="12886000" />
       <workItem from="1532259154118" duration="71000" />
-      <workItem from="1532544911591" duration="1257000" />
+      <workItem from="1532544911591" duration="1277000" />
     </task>
+    <task id="LOCAL-00001" summary="Moved Connection methods to a new class.">
+      <created>1532546184909</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1532546184912</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14214000" />
+    <option name="totallyTimeSpent" value="14234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -436,12 +440,12 @@
           <caret line="96" column="89" lean-forward="false" selection-start-line="96" selection-start-column="89" selection-end-line="96" selection-end-column="89" />
           <folding>
             <element signature="method#Character#0;class#Character#0" expanded="false" />
-            <marker date="1532545994198" expanded="true" signature="2801:2834" ph="SELECT * FRO... hero" />
-            <marker date="1532545994198" expanded="true" signature="3653:3698" ph="INSERT INTO hero... " />
-            <marker date="1532545994198" expanded="true" signature="3653:3734" ph="INSERT INTO hero... " />
-            <marker date="1532545994198" expanded="true" signature="3831:3849" ph="SELECT * FRO... hero" />
-            <marker date="1532545994198" expanded="true" signature="3831:3855" ph="SELECT * FRO... hero" />
-            <marker date="1532545994198" expanded="true" signature="3831:3872" ph="SELECT * FRO... hero" />
+            <marker date="1532546179575" expanded="true" signature="2773:2806" ph="SELECT * FRO... hero" />
+            <marker date="1532546179575" expanded="true" signature="3625:3670" ph="INSERT INTO hero... " />
+            <marker date="1532546179575" expanded="true" signature="3625:3706" ph="INSERT INTO hero... " />
+            <marker date="1532546179575" expanded="true" signature="3803:3821" ph="SELECT * FRO... hero" />
+            <marker date="1532546179575" expanded="true" signature="3803:3827" ph="SELECT * FRO... hero" />
+            <marker date="1532546179575" expanded="true" signature="3803:3844" ph="SELECT * FRO... hero" />
           </folding>
         </state>
       </provider>
@@ -462,8 +466,8 @@
           <caret line="65" column="24" lean-forward="false" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1532545994207" expanded="true" signature="1281:1329" ph="SELECT colum... " />
-            <marker date="1532545994207" expanded="true" signature="1281:1330" ph="SELECT * FRO... mob" />
+            <marker date="1532546179363" expanded="true" signature="1245:1293" ph="SELECT colum... " />
+            <marker date="1532546179363" expanded="true" signature="1245:1294" ph="SELECT * FRO... mob" />
           </folding>
         </state>
       </provider>
@@ -474,12 +478,12 @@
           <caret line="96" column="89" lean-forward="false" selection-start-line="96" selection-start-column="89" selection-end-line="96" selection-end-column="89" />
           <folding>
             <element signature="method#Character#0;class#Character#0" expanded="false" />
-            <marker date="1532545994198" expanded="true" signature="2801:2834" ph="SELECT * FRO... hero" />
-            <marker date="1532545994198" expanded="true" signature="3653:3698" ph="INSERT INTO hero... " />
-            <marker date="1532545994198" expanded="true" signature="3653:3734" ph="INSERT INTO hero... " />
-            <marker date="1532545994198" expanded="true" signature="3831:3849" ph="SELECT * FRO... hero" />
-            <marker date="1532545994198" expanded="true" signature="3831:3855" ph="SELECT * FRO... hero" />
-            <marker date="1532545994198" expanded="true" signature="3831:3872" ph="SELECT * FRO... hero" />
+            <marker date="1532546179575" expanded="true" signature="2773:2806" ph="SELECT * FRO... hero" />
+            <marker date="1532546179575" expanded="true" signature="3625:3670" ph="INSERT INTO hero... " />
+            <marker date="1532546179575" expanded="true" signature="3625:3706" ph="INSERT INTO hero... " />
+            <marker date="1532546179575" expanded="true" signature="3803:3821" ph="SELECT * FRO... hero" />
+            <marker date="1532546179575" expanded="true" signature="3803:3827" ph="SELECT * FRO... hero" />
+            <marker date="1532546179575" expanded="true" signature="3803:3844" ph="SELECT * FRO... hero" />
           </folding>
         </state>
       </provider>
@@ -500,8 +504,8 @@
           <caret line="65" column="24" lean-forward="true" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1532545994207" expanded="true" signature="1281:1329" ph="SELECT colum... " />
-            <marker date="1532545994207" expanded="true" signature="1281:1330" ph="SELECT * FRO... mob" />
+            <marker date="1532546179363" expanded="true" signature="1245:1293" ph="SELECT colum... " />
+            <marker date="1532546179363" expanded="true" signature="1245:1294" ph="SELECT * FRO... mob" />
           </folding>
         </state>
       </provider>
@@ -584,11 +588,11 @@
     <entry file="file://$PROJECT_DIR$/src/Mob.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
-          <caret line="73" column="9" lean-forward="false" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+          <caret line="72" column="9" lean-forward="false" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1532545994207" expanded="true" signature="1281:1329" ph="SELECT colum... " />
-            <marker date="1532545994207" expanded="true" signature="1281:1330" ph="SELECT * FRO... mob" />
+            <marker date="1532546179363" expanded="true" signature="1245:1293" ph="SELECT colum... " />
+            <marker date="1532546179363" expanded="true" signature="1245:1294" ph="SELECT * FRO... mob" />
           </folding>
         </state>
       </provider>
@@ -596,15 +600,15 @@
     <entry file="file://$PROJECT_DIR$/src/Character.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
-          <caret line="156" column="5" lean-forward="true" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
+          <caret line="154" column="5" lean-forward="true" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
           <folding>
             <element signature="method#Character#0;class#Character#0" expanded="false" />
-            <marker date="1532545994198" expanded="true" signature="2801:2834" ph="SELECT * FRO... hero" />
-            <marker date="1532545994198" expanded="true" signature="3653:3698" ph="INSERT INTO hero... " />
-            <marker date="1532545994198" expanded="true" signature="3653:3734" ph="INSERT INTO hero... " />
-            <marker date="1532545994198" expanded="true" signature="3831:3849" ph="SELECT * FRO... hero" />
-            <marker date="1532545994198" expanded="true" signature="3831:3855" ph="SELECT * FRO... hero" />
-            <marker date="1532545994198" expanded="true" signature="3831:3872" ph="SELECT * FRO... hero" />
+            <marker date="1532546179575" expanded="true" signature="2773:2806" ph="SELECT * FRO... hero" />
+            <marker date="1532546179575" expanded="true" signature="3625:3670" ph="INSERT INTO hero... " />
+            <marker date="1532546179575" expanded="true" signature="3625:3706" ph="INSERT INTO hero... " />
+            <marker date="1532546179575" expanded="true" signature="3803:3821" ph="SELECT * FRO... hero" />
+            <marker date="1532546179575" expanded="true" signature="3803:3827" ph="SELECT * FRO... hero" />
+            <marker date="1532546179575" expanded="true" signature="3803:3844" ph="SELECT * FRO... hero" />
           </folding>
         </state>
       </provider>
