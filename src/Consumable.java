@@ -15,5 +15,6 @@ public class Consumable extends Item{
 	public void setEffect(String effect) {
 		this.effect = effect;
 	}
-	
+
+
 }

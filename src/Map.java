@@ -4,8 +4,8 @@ import java.util.Random;
 public class Map {
 
     private static int map[][] = new int[52][52];
-    final int MOB_COUNT = 40;
-    final int ITEM_COUNT = 20;
+    final int MOB_COUNT = 80;
+    final int ITEM_COUNT = 40;
 
 
     Random rand = new Random();
@@ -138,6 +138,9 @@ public class Map {
                     if(get(i,j) == get(x,y))
                         map[i][j] = 0;
         }
+    }
+    public static void itemGone(int x, int y){
+        map[x][y] = 0;
     }
 
 

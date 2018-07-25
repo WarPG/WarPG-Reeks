@@ -1,6 +1,18 @@
-public class Bag extends Item{
-	
+import java.util.ArrayList;
+
+public class Bag{
+
 	private int capacity;
+	private ArrayList<Item> items;
+
+	public Bag(){
+		items = new ArrayList<Item>();
+	}
+
+
+	public ArrayList<Item> getItems() {
+		return items;
+	}
 
 	public int getCapacity() {
 		return capacity;
@@ -9,5 +21,6 @@ public class Bag extends Item{
 	public void setCapacity(int capacity) {
 		this.capacity = capacity;
 	}
-	
+
+
 }

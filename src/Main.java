@@ -46,6 +46,9 @@ public class Main {
             }else if (map.get(guy_x, guy_y) == 10){
                 log = "item";
                 System.out.println(log);
+                Item item = new Item();
+                grab(item);
+                map.itemGone(guy_x,guy_y);
             }else if (map.get(guy_x, guy_y) == -1){
                 log = "next level";
                 System.out.println(log);
@@ -76,7 +79,7 @@ public class Main {
             turn = false;
         }
         while (guy.getHealth() > 0 && mob.getHealth() > 0) {
-            if (potion > 0) {// JButton potion is clicked
+            if (potion > 0) {  // JButton potion is clicked
                 if (turn){
                     //USE POTION
                     turn = false;
@@ -140,7 +143,24 @@ public class Main {
         return 0;
     }
 
+    private static void grab(Item item){
+        log = "You found an item. Its " + item;
+        System.out.println(log);
+        log = "Do you wanna have it?" ;
+        System.out.println(log);
+
+        // If yes send it to bag
+        if (item.isArmor())
+            guy.wearArmor(item);
+        if (item.isWeapon())
+            guy.wearWeapon(item);
+        if (item.isAccessory())
+            guy.wearAccessory(item);
+        // if no get money fuck bitches
+        guy.setGold(guy.getGold() + item.getPrice()*guy.getCharisma()/100);
+
+    }
     private static void levelup(){
-        // USE GETTERS AND SETTERS FOR CHANGING THEM
+        //JButton push gets us higher stats
     }
 }

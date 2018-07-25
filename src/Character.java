@@ -178,7 +178,7 @@ public class Character {
         try {
             Class.forName("org.postgresql.Driver");
             Connection con = Connect.getConnection();
-            PreparedStatement stmt = Objects.requireNonNull(con).prepareStatement("INSERT INTO hero (id,password,name,dexterity,experience,health,defense,hit_points,gold,charisma,attack,strength,luck)VALUES (\'" + id + "\',\'" + password + "\',\'" + name + "\',1,0,1,1,1,0,1,1,1,1)");
+            PreparedStatement stmt = Objects.requireNonNull(con).prepareStatement("INSERT INTO hero (id,password,name,dexterity,experience,health,defense,hit_points,gold,charisma,attack,strength,luck)VALUES (" + id + "," + password + "," + name + ",1,0,1,1,1,0,1,1,1,1)");
             stmt.executeQuery();
             PreparedStatement stmt2 = con.prepareStatement("SELECT * FROM hero WHERE id=" + id + " AND password=" + password);
             ResultSet rs = stmt2.executeQuery();
