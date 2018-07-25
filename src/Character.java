@@ -89,13 +89,6 @@ public class Character {
 		this.luck = luck;
 	}
 
-    public int getHero_id() {
-        return hero_id;
-    }
-
-    public void setHero_id(int hero_id) {
-        this.hero_id = hero_id;
-    }
 
     public String getName() {
         return name;
@@ -118,11 +111,10 @@ public class Character {
     }
 
 
-    public Character(Reader id, Reader password, int hero_id, Reader name, int dexterity, int experience, int health, int defense, int hit_points,
+    public Character(Reader id, Reader password, Reader name, int dexterity, int experience, int health, int defense, int hit_points,
                      int  gold , int  charisma , int  attack , int  strength , int  luck ){
         this.id = id.toString();
         this.password = password.toString();
-        this.hero_id = hero_id;
 	    this.name=name.toString();
 	    this.dexterity=dexterity;
 	    this.experience=experience;
@@ -139,7 +131,6 @@ public class Character {
     public Character() {
         this.id = "JaneDoe";
         this.password = "1234";
-        this.hero_id = 999999;
         this.name = "Jane Doe";
         this.dexterity = 10;
         this.experience = 0;
@@ -162,7 +153,6 @@ public class Character {
             Character chr = new Character(
                     rs.getCharacterStream("id"),
                     rs.getCharacterStream("password"),
-                    rs.getInt("hero_id"),
                     rs.getCharacterStream("name"),
                     rs.getInt("dexterity"),
                     rs.getInt("experience"),
@@ -188,14 +178,13 @@ public class Character {
         try {
             Class.forName("org.postgresql.Driver");
             Connection con = Connect.getConnection();
-            PreparedStatement stmt = Objects.requireNonNull(con).prepareStatement("INSERT INTO hero VALUES (id,password,nextval('hero_id'),name,1,0,1,1,1,0,1,1,1,1)");
+            PreparedStatement stmt = Objects.requireNonNull(con).prepareStatement("INSERT INTO hero (id,password,name,dexterity,experience,health,defense,hit_points,gold,charisma,attack,strength,luck)VALUES (" + id + "," + password + "," + name + ",1,0,1,1,1,0,1,1,1,1)");
             stmt.executeQuery();
             PreparedStatement stmt2 = con.prepareStatement("SELECT * FROM hero WHERE id=" + id + " AND password=" + password);
             ResultSet rs = stmt2.executeQuery();
             Character chr = new Character(
                     rs.getCharacterStream("id"),
                     rs.getCharacterStream("password"),
-                    rs.getInt("hero_id"),
                     rs.getCharacterStream("name"),
                     rs.getInt("dexterity"),
                     rs.getInt("experience"),
