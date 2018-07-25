@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class Map {
 
-    private int map[][] = new int[52][52];
+    private static int map[][] = new int[52][52];
     final int MOB_COUNT = 40;
     final int ITEM_COUNT = 20;
 
@@ -14,14 +14,14 @@ public class Map {
         init();
     }
 
-    public int get(int x, int y){
+    public static int get(int x, int y){
         if ((x > 0) && (x < 51) && (y > 0) && (y < 51))
             return map[x][y];
         else
             return -100;
     }
 
-    public void printMAP(){
+    public static void printMAP(){
         for (int i = 0; i < 52; i++)
             for (int j = 0; j < 52; j++)
                 System.out.println(map[i][j]);
@@ -126,6 +126,17 @@ public class Map {
                 map[x][y] = 10;
             }
 
+        }
+    }
+
+    public static void combatOver(int x, int y){
+        if (get(x,y) != 1)
+            return;
+        else {
+            for (int i = 0; i < 52; i++)
+                for (int j = 0; j < 52; j++)
+                    if(get(i,j) == get(x,y))
+                        map[i][j] = 0;
         }
     }
 
