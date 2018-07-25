@@ -153,11 +153,11 @@ public class Character {
         this.luck = 10;
     }
 
-	public Character getCharacter(int id){
+    public Character getCharacter(String id, String password) {
         try {
             Class.forName("org.postgresql.Driver");
             Connection con = Connect.getConnection();
-            PreparedStatement stmt = Objects.requireNonNull(con).prepareStatement("SELECT * FROM hero WHERE hero_id=" + id);
+            PreparedStatement stmt = Objects.requireNonNull(con).prepareStatement("SELECT * FROM hero WHERE id=" + id + " AND password=" + password);
             ResultSet rs = stmt.executeQuery();
             Character chr = new Character(
                     rs.getCharacterStream("id"),
@@ -190,9 +190,24 @@ public class Character {
             Connection con = Connect.getConnection();
             PreparedStatement stmt = Objects.requireNonNull(con).prepareStatement("INSERT INTO hero VALUES (id,password,nextval('hero_id'),name,1,0,1,1,1,0,1,1,1,1)");
             stmt.executeQuery();
-            PreparedStatement stmt2 = con.prepareStatement("SELECT * FROM hero WHERE lastval(hero_id)");
+            PreparedStatement stmt2 = con.prepareStatement("SELECT * FROM hero WHERE id=" + id + " AND password=" + password);
             ResultSet rs = stmt2.executeQuery();
-            Character chr = getCharacter(rs.getInt("hero_id"));
+            Character chr = new Character(
+                    rs.getCharacterStream("id"),
+                    rs.getCharacterStream("password"),
+                    rs.getInt("hero_id"),
+                    rs.getCharacterStream("name"),
+                    rs.getInt("dexterity"),
+                    rs.getInt("experience"),
+                    rs.getInt("health"),
+                    rs.getInt("defense"),
+                    rs.getInt("hit_points"),
+                    rs.getInt("gold"),
+                    rs.getInt("charisma"),
+                    rs.getInt("attack"),
+                    rs.getInt("strength"),
+                    rs.getInt("luck")
+            );
             con.close();
             return chr;
 
