@@ -1,13 +1,12 @@
 import java.io.Reader;
-import java.net.*;
-import java.sql.*;
-import java.util.Properties;
-import java.util.concurrent.ThreadLocalRandom;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class Character {
 
-    public static void main(String[] args) throws URISyntaxException, SQLException {
-    }
+    private Connect c = new Connect();
     private int id;
 	private int dexterity;
 	private int experience;
@@ -22,11 +21,9 @@ public class Character {
 	private int ms;
 	private String cClass;
 	private String name;
-	
-	
-	public String getName() {
-		return name;
-	}
+
+    public static void main(String[] args) {
+    }
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -110,12 +107,17 @@ public class Character {
 	    this.cClass=cClass.toString();
 	    this.ms=ms;
     }
-	
+
 	public Character(){}
+
+    public String getName() {
+        return name;
+    }
+
 	public Character getCharacter(int id){
         try {
             Class.forName("org.postgresql.Driver");
-            Connection con = getConnection();
+            Connection con = Connect.getConnection();
             PreparedStatement stmt = con.prepareStatement("SELECT * FROM hero WHERE hero_id="+id);
             ResultSet rs = stmt.executeQuery();
             Character chr = new Character(rs.getInt(1),rs.getCharacterStream(2),rs.getInt(3)
@@ -128,8 +130,6 @@ public class Character {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
         }
         return null;
     }
@@ -137,7 +137,7 @@ public class Character {
     public Character newCharacter(String id, String password,String name){
         try {
             Class.forName("org.postgresql.Driver");
-            Connection con = getConnection();
+            Connection con = Connect.getConnection();
             PreparedStatement stmt = con.prepareStatement("INSERT INTO hero VALUES (id,password,nextval('hero_id'),name,1,0,1,1,1,0,1,1,1,1)");
             stmt.executeQuery();
             PreparedStatement stmt2 = con.prepareStatement("SELECT * FROM hero WHERE lastval(hero_id)");
@@ -150,49 +150,8 @@ public class Character {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
         }
         return null;
     }
 
-    private static Connection getConnection() throws URISyntaxException, SQLException {
-        try {
-            String url = "jdbc:postgresql://ec2-54-217-235-166.eu-west-1.compute.amazonaws.com:5432/dej96gpmnq6f0e?user=ylvpctvunmtdxy&password=3bd1b5b109dbc9bb61e8eb4e8daaf4add1d6b94f453298578315ade51a57614e&ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory";
-            Properties props = new Properties();
-            props.setProperty("user", "ylvpctvunmtdxy");
-            props.setProperty("password", "3bd1b5b109dbc9bb61e8eb4e8daaf4add1d6b94f453298578315ade51a57614e");
-            props.setProperty("ssl", "true");
-            return DriverManager.getConnection(url, props);
-        } catch (SQLException e) {
-
-            System.out.println("Connection Failed! Check output console");
-            e.printStackTrace();
-            return null;
-        }
-	}
-
-
-
-
-	/*
-    public static void main(String [] args){
-        try {
-
-            Class.forName("org.postgresql.Driver");
-        Connection con = DriverManager.getConnection("postgres://ylvpctvunmtdxy:3bd1b5b109dbc9bb61e8eb4e8daaf4add1d6b94f453298578315ade51a57614e@ec2-54-217-235-166.eu-west-1.compute.amazonaws.com:5432/dej96gpmnq6f0e","postgres","ridahab");
-        PreparedStatement stmt = con.prepareStatement("SELECT * FROM Character");
-            ResultSet Rs = stmt.executeQuery();
-            while(true){
-                System.out.println("lol");
-            }
-    } catch (ClassNotFoundException e) {
-        e.printStackTrace();
-    } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-    
-    
-    */
 }
