@@ -156,6 +156,9 @@ public class Main {
             guy.wearWeapon(item);
         if (item.isAccessory())
             guy.wearAccessory(item);
+        if (item.isWearable())
+            guy.wearWearable(item);
+
         // if no get money fuck bitches
         guy.setGold(guy.getGold() + item.getPrice()*guy.getCharisma()/100);
 
