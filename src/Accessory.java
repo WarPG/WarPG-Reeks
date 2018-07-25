@@ -1,13 +1,13 @@
 public class Accessory extends Item{
 	
-	private String benefit;
+	private int dexterity;
 
-	public String getBenefit() {
-		return benefit;
+	public int getDexterity() {
+		return dexterity;
 	}
 
-	public void setBenefit(String benefit) {
-		this.benefit = benefit;
+	public void setDexterity(int dexterity) {
+		this.dexterity = dexterity;
 	}
 	
 	
