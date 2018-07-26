@@ -14,7 +14,9 @@ public class Bag extends Item {
         items = new ArrayList<Item>();
     }
 
+    public void equip(Item item) {
 
+    }
     public ArrayList<Item> getItems() {
         try {
             items.clear();
