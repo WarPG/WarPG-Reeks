@@ -161,6 +161,7 @@ public class Main {
 
         // if no get money fuck bitches
         guy.setGold(guy.getGold() + item.getPrice()*guy.getCharisma()/100);
+        guy.updateCharacter(guy);
 
     }
     private static void levelup(){
