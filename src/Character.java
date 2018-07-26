@@ -24,8 +24,6 @@ public class Character {
 	private int luck;
 	private String name;
 
-    public static void main(String[] args) {
-    }
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -90,183 +88,9 @@ public class Character {
 		this.luck = luck;
 	}
 
-<<<<<<< HEAD
-	public int getHero_id() {
-		return hero_id;
-	}
-
-	public void setHero_id(int hero_id) {
-		this.hero_id = hero_id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
 	public Bag getBag(){
 		return bg;
 	}
-
-	public Character(Reader id, Reader password, int hero_id, Reader name, int dexterity, int experience, int health, int defense, int hit_points,
-					 int  gold , int  charisma , int  attack , int  strength , int  luck ){
-		this.id = id.toString();
-		this.password = password.toString();
-		this.hero_id = hero_id;
-		this.name=name.toString();
-		this.dexterity=dexterity;
-		this.experience=experience;
-		this.health=health;
-		this.defense=defense;
-		this.hitPoints=hit_points;
-		this.gold=gold;
-		this.charisma=charisma;
-		this.attack=attack;
-		this.strength=strength;
-		this.luck=luck;
-	}
-
-	public Character() {
-		this.id = "JaneDoe";
-		this.password = "1234";
-		this.hero_id = 999999;
-		this.name = "Jane Doe";
-		this.dexterity = 10;
-		this.experience = 0;
-		this.health = 50;
-		this.defense = 10;
-		this.hitPoints = 10;
-		this.gold = 0;
-		this.charisma = 10;
-		this.attack = 10;
-		this.strength = 10;
-		this.luck = 10;
-	}
-
-	public static Character getCharacter(String id, String password) {
-		try {
-			Class.forName("org.postgresql.Driver");
-			Connection con = Connect.getConnection();
-			PreparedStatement stmt = Objects.requireNonNull(con).prepareStatement("SELECT * FROM hero WHERE id=" + id + " AND password=" + password);
-			ResultSet rs = stmt.executeQuery();
-			Character chr = new Character(
-					rs.getCharacterStream("id"),
-					rs.getCharacterStream("password"),
-					rs.getInt("hero_id"),
-					rs.getCharacterStream("name"),
-					rs.getInt("dexterity"),
-					rs.getInt("experience"),
-					rs.getInt("health"),
-					rs.getInt("defense"),
-					rs.getInt("hit_points"),
-					rs.getInt("gold"),
-					rs.getInt("charisma"),
-					rs.getInt("attack"),
-					rs.getInt("strength"),
-					rs.getInt("luck")
-			);
-			con.close();
-			return chr;
-
-		} catch (ClassNotFoundException | SQLException e) {
-			e.printStackTrace();
-		}
-		return null;
-	}
-
-	public static Character newCharacter(String id, String password,String name){
-		try {
-			Class.forName("org.postgresql.Driver");
-			Connection con = Connect.getConnection();
-			PreparedStatement stmt = Objects.requireNonNull(con).prepareStatement("INSERT INTO hero VALUES (id,password,nextval('hero_id'),name,1,0,1,1,1,0,1,1,1,1)");
-			stmt.executeQuery();
-			PreparedStatement stmt2 = con.prepareStatement("SELECT * FROM hero WHERE id=" + id + " AND password=" + password);
-			ResultSet rs = stmt2.executeQuery();
-			Character chr = new Character(
-					rs.getCharacterStream("id"),
-					rs.getCharacterStream("password"),
-					rs.getInt("hero_id"),
-					rs.getCharacterStream("name"),
-					rs.getInt("dexterity"),
-					rs.getInt("experience"),
-					rs.getInt("health"),
-					rs.getInt("defense"),
-					rs.getInt("hit_points"),
-					rs.getInt("gold"),
-					rs.getInt("charisma"),
-					rs.getInt("attack"),
-					rs.getInt("strength"),
-					rs.getInt("luck")
-			);
-			con.close();
-			return chr;
-
-		} catch (ClassNotFoundException | SQLException e) {
-			e.printStackTrace();
-		}
-		return null;
-	}
-
-	public void wearArmor(Armor item){
-
-		ArrayList<Item> items = bg.getItems();
-
-		if (items.get(item.getWearType()) != null){
-			setDefense(getDefense() - ((Armor)items.get(item.getWearType())).getDefence() + item.getDefence());
-		}else{
-			setDefense(getDefense() + item.getDefence());
-
-		}
-	}
-	public void wearWeapon(Weapon item){
-
-		ArrayList<Item> items = bg.getItems();
-
-		if (items.get(5) != null){
-			setAttack(getAttack() - ((Weapon)items.get(item.getWearType())).getAttack() + item.getAttack());
-		}else{
-			setAttack(getAttack() + item.getAttack());
-
-		}
-	}
-	public void wearAccessory(Accessory item){
-
-		ArrayList<Item> items = bg.getItems();
-
-		if (items.get(item.getWearType()) != null){
-			setDexterity(getDexterity() - ((Accessory)items.get(item.getWearType())).getDexterity() + item.getDexterity());
-		}else{
-			setDexterity(getDexterity() + item.getDexterity());
-
-		}
-	}
-	public void wearWearable(Wearable item){
-
-		ArrayList<Item> items = bg.getItems();
-
-		if (items.get(item.getWearType()) != null){
-			setStrength(getStrength() - ((Wearable)items.get(item.getWearType())).getStrength() + item.getStrength());
-		}else{
-			setStrength(getStrength() + item.getStrength());
-
-		}
-	}
-=======
->>>>>>> d36ff67d6962377921da5cbddc03672013d7b0f3
 
     public String getName() {
         return name;
@@ -418,5 +242,8 @@ public class Character {
             setDexterity(getDexterity() + item.getDexterity());
 
         }
+    }
+
+    public void wearWearable(Item item) {
     }
 }
