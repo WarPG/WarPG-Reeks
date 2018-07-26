@@ -76,13 +76,13 @@ public class Item {
 
 		if(wearType==1){
 			ret = ret + "Helmet";
-		}else if(wearType==2){
+		}else if(wearType==4){
 			ret = ret + "Chestplate";
 		}
 		else if(wearType==3){
 			ret = ret + "Gloves";
 		}
-		else if(wearType==4){
+		else if(wearType==2){
 			ret = ret + "Shoes";
 		}
 		else if(wearType==5){
@@ -127,10 +127,16 @@ public class Item {
 	}
 
 	public boolean isArmor(){
-	    if (wearType < 5)
+	    if (wearType < 4)
 	        return true;
 	    return false;
     }
+
+	public boolean isWearable(){
+		if (wearType == 4)
+			return true;
+		return false;
+	}
 
 
     public boolean isWeapon(){

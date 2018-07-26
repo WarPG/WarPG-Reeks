@@ -1,6 +1,6 @@
 import java.util.Random;
-import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
+import java.util.Scanner;
 
 public class Main {
 
@@ -34,29 +34,29 @@ public class Main {
             else if (go == 5)
                 break;
 
-            if (Map.get(guy_x, guy_y) == 0) {
+            if (map.get(guy_x, guy_y) == 0){
                 log = "meh";
                 System.out.println(log);
-            } else if (Map.get(guy_x, guy_y) == 1) {
+            }else if (map.get(guy_x, guy_y) == 1){
                 log = "enemy";
                 System.out.println(log);
                 Mob mob = new Mob(level, guy_x, guy_y);
                 combat(mob);
-                Map.combatOver(guy_x, guy_y);
-            } else if (Map.get(guy_x, guy_y) == 10) {
+                map.combatOver(guy_x, guy_y);
+            }else if (map.get(guy_x, guy_y) == 10){
                 log = "item";
                 System.out.println(log);
                 Item item = new Item();
                 grab(item);
-                Map.itemGone(guy_x, guy_y);
-            } else if (Map.get(guy_x, guy_y) == -1) {
+                map.itemGone(guy_x,guy_y);
+            }else if (map.get(guy_x, guy_y) == -1){
                 log = "next level";
                 System.out.println(log);
                 level++;
                 guy_x = 25;
                 guy_y = 25;
                 map = new Map();
-            } else if (Map.get(guy_x, guy_y) < -1) {
+            }else if (map.get(guy_x, guy_y) < -1){
                 log = "what";
                 System.exit(0);
             }
@@ -151,11 +151,14 @@ public class Main {
 
         // If yes send it to bag
         if (item.isArmor())
-            guy.wearArmor((Armor) item);
+            guy.wearArmor(item);
         if (item.isWeapon())
-            guy.wearWeapon((Weapon) item);
+            guy.wearWeapon(item);
         if (item.isAccessory())
-            guy.wearAccessory((Accessory) item);
+            guy.wearAccessory(item);
+        if (item.isWearable())
+            guy.wearWearable(item);
+
         // if no get money fuck bitches
         guy.setGold(guy.getGold() + item.getPrice()*guy.getCharisma()/100);
 
