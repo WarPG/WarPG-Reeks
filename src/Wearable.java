@@ -30,10 +30,11 @@ public class Wearable extends Item{
 			rs.next();
 
 			price = rs.getInt("price");
-			category = rs.getInt("category");
+			category = rs.getInt("tier");
 			dropRate = rs.getInt("drop_rate");
 			wearType = rs.getInt("weartype");
 			requirement = rs.getString("requirement");
+			requirement = rs.getString("strength");
 			rs.close();
 			con.close();
 		} catch (SQLException e) {

@@ -14,7 +14,22 @@ public class Bag extends Item {
         items = new ArrayList<Item>();
     }
 
-    public void equip(Item item) {
+    public void equip() {
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            Connection con = Connect.getConnection();
+            for (int i = 0; i < 8; i++) {
+                PreparedStatement stmt = Objects.requireNonNull(con).prepareStatement("UPDATE bag SET \'" + "slot" + i + "=" + items.get(i) + "\' WHERE id=\'" + id + "\'");
+                stmt.execute();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
 
     }
     public ArrayList<Item> getItems() {

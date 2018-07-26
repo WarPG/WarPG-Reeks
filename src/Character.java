@@ -240,6 +240,7 @@ public class Character {
             setDefense(getDefense() + item.getDefense());
 
         }
+        bg.equip();
     }
 
     public void wearWeapon(Weapon item) {
@@ -252,6 +253,7 @@ public class Character {
             setAttack(getAttack() + item.getAttack());
 
         }
+        bg.equip();
     }
 
     public void wearAccessory(Accessory item) {
@@ -264,6 +266,7 @@ public class Character {
             setDexterity(getDexterity() + item.getDexterity());
 
         }
+        bg.equip();
     }
 
     public void wearWearable(Wearable item) {
@@ -275,5 +278,6 @@ public class Character {
             setDexterity(getStrength() + item.getStrength());
 
         }
+        bg.equip();
     }
 }
