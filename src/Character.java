@@ -183,7 +183,7 @@ public class Character {
             Connection con = Connect.getConnection();
             PreparedStatement stmt = Objects.requireNonNull(con).prepareStatement("INSERT INTO hero (id,password,name,dexterity,experience,health,defense,hit_points,gold,charisma,attack,strength,luck)VALUES (\'" + id + "\',\'" + password + "\',\'" + name + "\',10,10,10,10,10,10,10,10,10,10)");
             stmt.execute();
-            PreparedStatement stmt3 = Objects.requireNonNull(con).prepareStatement("INSERT INTO bag (id,password,name,dexterity,experience,health,defense,hit_points,gold,charisma,attack,strength,luck)VALUES (\'" + id + "\',\'" + password + "\',\'" + name + "\',1,0,1,1,1,0,1,1,1,1)");
+            PreparedStatement stmt3 = Objects.requireNonNull(con).prepareStatement("INSERT INTO bag VALUES (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,id,NULL)");
             stmt3.execute();
             PreparedStatement stmt2 = con.prepareStatement("SELECT * FROM hero WHERE id=\'" + id + "\' AND password=\'" + password + "\'");
             ResultSet rs = stmt2.executeQuery();
