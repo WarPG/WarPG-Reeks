@@ -1,15 +1,15 @@
 import java.util.Random;
 
 public class Armor extends Item{
-	
-	private int defence;
+
+	private int defense;
 
 	public int getDefence() {
-		return defence;
+		return defense;
 	}
 
-	public void setDefence(int defence) {
-		this.defence = defence;
+	public void setDefence(int defense) {
+		this.defense = defense;
 	}
 
 	public Armor(int level){

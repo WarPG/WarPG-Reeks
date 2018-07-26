@@ -3,14 +3,15 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class Character {
 
     private Connect c = new Connect();
+    private Bag bg;
     private String id;
     private String password;
-    private int hero_id;
 	private int dexterity;
 	private int experience;
 	private int health;
@@ -174,11 +175,11 @@ public class Character {
         return null;
     }
 
-    public Character newCharacter(String id, String password,String name){
+    public Character newCharacter(String id, String password, String name){
         try {
             Class.forName("org.postgresql.Driver");
             Connection con = Connect.getConnection();
-            PreparedStatement stmt = Objects.requireNonNull(con).prepareStatement("INSERT INTO hero (id,password,name,dexterity,experience,health,defense,hit_points,gold,charisma,attack,strength,luck)VALUES (" + id + "," + password + "," + name + ",1,0,1,1,1,0,1,1,1,1)");
+            PreparedStatement stmt = Objects.requireNonNull(con).prepareStatement("INSERT INTO hero (id,password,name,dexterity,experience,health,defense,hit_points,gold,charisma,attack,strength,luck)VALUES (\'" + id + "\',\'" + password + "\',\'" + name + "\',1,0,1,1,1,0,1,1,1,1)");
             stmt.executeQuery();
             PreparedStatement stmt2 = con.prepareStatement("SELECT * FROM hero WHERE id=" + id + " AND password=" + password);
             ResultSet rs = stmt2.executeQuery();
@@ -204,5 +205,41 @@ public class Character {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public void wearArmor(Armor item) {
+
+        ArrayList<Item> items = bg.getItems();
+
+        if (items.get(item.getWearType()) != null) {
+            setDefense(getDefense() - ((Armor) items.get(item.getWearType())).getDefence() + item.getDefence());
+        } else {
+            setDefense(getDefense() + item.getDefence());
+
+        }
+    }
+
+    public void wearWeapon(Weapon item) {
+
+        ArrayList<Item> items = bg.getItems();
+
+        if (items.get(5) != null) {
+            setAttack(getAttack() - ((Weapon) items.get(item.getWearType())).getAttack() + item.getAttack());
+        } else {
+            setAttack(getAttack() + item.getAttack());
+
+        }
+    }
+
+    public void wearAccessory(Accessory item) {
+
+        ArrayList<Item> items = bg.getItems();
+
+        if (items.get(item.getWearType()) != null) {
+            setDexterity(getDexterity() - ((Accessory) items.get(item.getWearType())).getDexterity() + item.getDexterity());
+        } else {
+            setDexterity(getDexterity() + item.getDexterity());
+
+        }
     }
 }
