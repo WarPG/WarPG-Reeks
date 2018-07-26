@@ -224,6 +224,7 @@ public class Character {
                     ",gold=" + character.gold + ",charisma=" + character.charisma + ",attack=" + character.attack + " ,strength=" + character.strength + " ,luck=" + character.luck + "  WHERE id=\'" + character.id + "\'");
 
             stmt.execute();
+            con.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }

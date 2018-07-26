@@ -31,6 +31,8 @@ public class Item {
             dropRate = rs.getInt("drop_rate");
             wearType = rs.getInt("weartype");
             requirement = rs.getString("requirement");
+            rs.close();
+            con.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }

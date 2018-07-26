@@ -66,6 +66,7 @@ public class Mob {
             attack = 100 + level*(rs.getInt("attack"));
             dexterity = 100 + level*(rs.getInt("dexterity"));
             strength = 100 + level*(rs.getInt("strength"));
+            rs.close();
             con.close();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
