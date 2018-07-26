@@ -265,6 +265,14 @@ public class Character {
         }
     }
 
-    public void wearWearable(Item item) {
+    public void wearWearable(Wearable item) {
+        ArrayList<Item> items = bg.getItems();
+
+        if (items.get(item.getWearType()) != null) {
+            setDexterity(getStrength() - ((Wearable) items.get(item.getWearType())).getStrength() + item.getStrength());
+        } else {
+            setDexterity(getStrength() + item.getStrength());
+
+        }
     }
 }
