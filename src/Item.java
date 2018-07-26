@@ -6,10 +6,11 @@ import java.sql.SQLException;
 public class Item {
 
     protected int price;
+    protected int item_id;
     protected int category;
     protected int dropRate;
     protected int wearType;
-    protected int id;
+    protected String id;
     protected String requirement;
 
     public Item(){
@@ -25,7 +26,7 @@ public class Item {
 
             ResultSet rs = stmt.executeQuery();
             rs.next();
-
+            item_id = rs.getInt("item_id");
             price = rs.getInt("price");
             category = rs.getInt("tier");
             dropRate = rs.getInt("drop_rate");

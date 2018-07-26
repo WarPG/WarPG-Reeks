@@ -42,4 +42,30 @@ public class Accessory extends Item{
         }
     }
 
+    public Accessory(int item_id) {
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        Connection con = Connect.getConnection();
+        PreparedStatement stmt = null;
+        try {
+            stmt = con.prepareStatement("SELECT * FROM accesory WHERE item_id=" + item_id);
+
+            ResultSet rs = stmt.executeQuery();
+            rs.next();
+
+            price = rs.getInt("price");
+            category = rs.getInt("tier");
+            dropRate = rs.getInt("drop_rate");
+            wearType = rs.getInt("weartype");
+            requirement = rs.getString("requirement");
+            dexterity = rs.getInt("dexterity");
+            rs.close();
+            con.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
