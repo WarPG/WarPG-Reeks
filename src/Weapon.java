@@ -25,7 +25,7 @@ public class Weapon extends Item{
         Connection con = Connect.getConnection();
         PreparedStatement stmt = null;
         try {
-            stmt = con.prepareStatement("SELECT * FROM armor ORDER BY RANDOM() LIMIT 1 ");
+            stmt = con.prepareStatement("SELECT * FROM weapon ORDER BY RANDOM() LIMIT 1 ");
 
             ResultSet rs = stmt.executeQuery();
             rs.next();

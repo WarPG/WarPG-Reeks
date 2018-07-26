@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5a4d0c5f-e05f-4e42-b979-e8cd92556ebe" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Accessory.java" afterPath="$PROJECT_DIR$/src/Accessory.java" />
-      <change beforePath="$PROJECT_DIR$/src/Armor.java" afterPath="$PROJECT_DIR$/src/Armor.java" />
-      <change beforePath="$PROJECT_DIR$/src/Bag.java" afterPath="$PROJECT_DIR$/src/Bag.java" />
-      <change beforePath="$PROJECT_DIR$/src/Character.java" afterPath="$PROJECT_DIR$/src/Character.java" />
-      <change beforePath="$PROJECT_DIR$/src/Item.java" afterPath="$PROJECT_DIR$/src/Item.java" />
       <change beforePath="$PROJECT_DIR$/src/Weapon.java" afterPath="$PROJECT_DIR$/src/Weapon.java" />
-      <change beforePath="$PROJECT_DIR$/src/Wearable.java" afterPath="$PROJECT_DIR$/src/Wearable.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +27,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Character.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Character.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Character.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="912">
@@ -116,7 +110,7 @@
       <file leaf-file-name="Wearable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wearable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
+            <state relative-caret-position="254">
               <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -165,11 +159,11 @@
       <file leaf-file-name="Weapon.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Weapon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+            <state relative-caret-position="135">
+              <caret line="27" column="61" lean-forward="false" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1532575778926" expanded="true" signature="638:683" ph="SELECT * FRO... armor" />
+                <marker date="1532576174608" expanded="true" signature="638:684" ph="SELECT * FRO... armor" />
               </folding>
             </state>
           </provider>
@@ -179,20 +173,20 @@
         <entry file="file://$PROJECT_DIR$/src/Bag.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+              <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2395#2396#0" expanded="true" />
-                <element signature="e#2426#2427#0" expanded="true" />
-                <element signature="e#2471#2472#0" expanded="true" />
-                <element signature="e#2511#2512#0" expanded="true" />
-                <marker date="1532576117272" expanded="true" signature="704:721" ph="UPDATE \'mis... " />
-                <marker date="1532576117272" expanded="true" signature="704:740" ph="UPDATE bag... " />
-                <marker date="1532576117272" expanded="true" signature="704:786" ph="UPDATE FROM " />
-                <marker date="1532576117272" expanded="true" signature="1229:1258" ph="SELECT * FRO... bag" />
-                <marker date="1532576117272" expanded="true" signature="1229:1270" ph="SELECT * FRO... bag" />
-                <marker date="1532576117272" expanded="true" signature="1887:1922" ph="SELECT * FRO... item" />
-                <marker date="1532576117272" expanded="true" signature="1887:1943" ph="SELECT * FRO... item" />
+                <element signature="e#2406#2407#0" expanded="true" />
+                <element signature="e#2437#2438#0" expanded="true" />
+                <element signature="e#2482#2483#0" expanded="true" />
+                <element signature="e#2522#2523#0" expanded="true" />
+                <marker date="1532576135500" expanded="true" signature="711:728" ph="UPDATE \'mis... " />
+                <marker date="1532576135500" expanded="true" signature="711:747" ph="UPDATE bag... " />
+                <marker date="1532576135500" expanded="true" signature="711:793" ph="UPDATE FROM " />
+                <marker date="1532576135500" expanded="true" signature="1240:1269" ph="SELECT * FRO... bag" />
+                <marker date="1532576135500" expanded="true" signature="1240:1281" ph="SELECT * FRO... bag" />
+                <marker date="1532576135500" expanded="true" signature="1898:1933" ph="SELECT * FRO... item" />
+                <marker date="1532576135500" expanded="true" signature="1898:1954" ph="SELECT * FRO... item" />
               </folding>
             </state>
           </provider>
@@ -221,11 +215,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Accessory.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Accessory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Accessory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+            <state relative-caret-position="275">
+              <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1532575778941" expanded="true" signature="664:712" ph="SELECT * FRO... accesory" />
@@ -249,8 +243,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>item</find>
-      <find>conne</find>
       <find>catego</find>
+      <find>conne</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -276,10 +270,10 @@
         <option value="$PROJECT_DIR$/src/Item.java" />
         <option value="$PROJECT_DIR$/src/Wearable.java" />
         <option value="$PROJECT_DIR$/src/Armor.java" />
-        <option value="$PROJECT_DIR$/src/Weapon.java" />
         <option value="$PROJECT_DIR$/src/Accessory.java" />
         <option value="$PROJECT_DIR$/src/Bag.java" />
         <option value="$PROJECT_DIR$/src/Character.java" />
+        <option value="$PROJECT_DIR$/src/Weapon.java" />
       </list>
     </option>
   </component>
@@ -611,11 +605,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532574584341</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="wowie equips galore.">
+      <created>1532576140902</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1532576140902</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29817000" />
+    <option name="totallyTimeSpent" value="29868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -697,7 +698,8 @@
     <MESSAGE value="Get an item from db." />
     <MESSAGE value="con.close();" />
     <MESSAGE value="wowie connections galore." />
-    <option name="LAST_COMMIT_MESSAGE" value="wowie connections galore." />
+    <MESSAGE value="wowie equips galore." />
+    <option name="LAST_COMMIT_MESSAGE" value="wowie equips galore." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -839,17 +841,17 @@
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2395#2396#0" expanded="true" />
-            <element signature="e#2426#2427#0" expanded="true" />
-            <element signature="e#2471#2472#0" expanded="true" />
-            <element signature="e#2511#2512#0" expanded="true" />
-            <marker date="1532576117272" expanded="true" signature="704:721" ph="UPDATE \'mis... " />
-            <marker date="1532576117272" expanded="true" signature="704:740" ph="UPDATE bag... " />
-            <marker date="1532576117272" expanded="true" signature="704:786" ph="UPDATE FROM " />
-            <marker date="1532576117272" expanded="true" signature="1229:1258" ph="SELECT * FRO... bag" />
-            <marker date="1532576117272" expanded="true" signature="1229:1270" ph="SELECT * FRO... bag" />
-            <marker date="1532576117272" expanded="true" signature="1887:1922" ph="SELECT * FRO... item" />
-            <marker date="1532576117272" expanded="true" signature="1887:1943" ph="SELECT * FRO... item" />
+            <element signature="e#2406#2407#0" expanded="true" />
+            <element signature="e#2437#2438#0" expanded="true" />
+            <element signature="e#2482#2483#0" expanded="true" />
+            <element signature="e#2522#2523#0" expanded="true" />
+            <marker date="1532576135500" expanded="true" signature="711:728" ph="UPDATE \'mis... " />
+            <marker date="1532576135500" expanded="true" signature="711:747" ph="UPDATE bag... " />
+            <marker date="1532576135500" expanded="true" signature="711:793" ph="UPDATE FROM " />
+            <marker date="1532576135500" expanded="true" signature="1240:1269" ph="SELECT * FRO... bag" />
+            <marker date="1532576135500" expanded="true" signature="1240:1281" ph="SELECT * FRO... bag" />
+            <marker date="1532576135500" expanded="true" signature="1898:1933" ph="SELECT * FRO... item" />
+            <marker date="1532576135500" expanded="true" signature="1898:1954" ph="SELECT * FRO... item" />
           </folding>
         </state>
       </provider>
@@ -1015,17 +1017,17 @@
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2395#2396#0" expanded="true" />
-            <element signature="e#2426#2427#0" expanded="true" />
-            <element signature="e#2471#2472#0" expanded="true" />
-            <element signature="e#2511#2512#0" expanded="true" />
-            <marker date="1532576117272" expanded="true" signature="704:721" ph="UPDATE \'mis... " />
-            <marker date="1532576117272" expanded="true" signature="704:740" ph="UPDATE bag... " />
-            <marker date="1532576117272" expanded="true" signature="704:786" ph="UPDATE FROM " />
-            <marker date="1532576117272" expanded="true" signature="1229:1258" ph="SELECT * FRO... bag" />
-            <marker date="1532576117272" expanded="true" signature="1229:1270" ph="SELECT * FRO... bag" />
-            <marker date="1532576117272" expanded="true" signature="1887:1922" ph="SELECT * FRO... item" />
-            <marker date="1532576117272" expanded="true" signature="1887:1943" ph="SELECT * FRO... item" />
+            <element signature="e#2406#2407#0" expanded="true" />
+            <element signature="e#2437#2438#0" expanded="true" />
+            <element signature="e#2482#2483#0" expanded="true" />
+            <element signature="e#2522#2523#0" expanded="true" />
+            <marker date="1532576135500" expanded="true" signature="711:728" ph="UPDATE \'mis... " />
+            <marker date="1532576135500" expanded="true" signature="711:747" ph="UPDATE bag... " />
+            <marker date="1532576135500" expanded="true" signature="711:793" ph="UPDATE FROM " />
+            <marker date="1532576135500" expanded="true" signature="1240:1269" ph="SELECT * FRO... bag" />
+            <marker date="1532576135500" expanded="true" signature="1240:1281" ph="SELECT * FRO... bag" />
+            <marker date="1532576135500" expanded="true" signature="1898:1933" ph="SELECT * FRO... item" />
+            <marker date="1532576135500" expanded="true" signature="1898:1954" ph="SELECT * FRO... item" />
           </folding>
         </state>
       </provider>
@@ -1467,44 +1469,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Weapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1532575778926" expanded="true" signature="638:683" ph="SELECT * FRO... armor" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Accessory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1532575778941" expanded="true" signature="664:712" ph="SELECT * FRO... accesory" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Consumable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Armor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1532575778934" expanded="true" signature="497:542" ph="SELECT * FRO... armor" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1522,31 +1491,20 @@
     <entry file="file://$PROJECT_DIR$/src/Bag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2395#2396#0" expanded="true" />
-            <element signature="e#2426#2427#0" expanded="true" />
-            <element signature="e#2471#2472#0" expanded="true" />
-            <element signature="e#2511#2512#0" expanded="true" />
-            <marker date="1532576117272" expanded="true" signature="704:721" ph="UPDATE \'mis... " />
-            <marker date="1532576117272" expanded="true" signature="704:740" ph="UPDATE bag... " />
-            <marker date="1532576117272" expanded="true" signature="704:786" ph="UPDATE FROM " />
-            <marker date="1532576117272" expanded="true" signature="1229:1258" ph="SELECT * FRO... bag" />
-            <marker date="1532576117272" expanded="true" signature="1229:1270" ph="SELECT * FRO... bag" />
-            <marker date="1532576117272" expanded="true" signature="1887:1922" ph="SELECT * FRO... item" />
-            <marker date="1532576117272" expanded="true" signature="1887:1943" ph="SELECT * FRO... item" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wearable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1532575697724" expanded="true" signature="572:620" ph="SELECT * FRO... wearable" />
+            <element signature="e#2406#2407#0" expanded="true" />
+            <element signature="e#2437#2438#0" expanded="true" />
+            <element signature="e#2482#2483#0" expanded="true" />
+            <element signature="e#2522#2523#0" expanded="true" />
+            <marker date="1532576135500" expanded="true" signature="711:728" ph="UPDATE \'mis... " />
+            <marker date="1532576135500" expanded="true" signature="711:747" ph="UPDATE bag... " />
+            <marker date="1532576135500" expanded="true" signature="711:793" ph="UPDATE FROM " />
+            <marker date="1532576135500" expanded="true" signature="1240:1269" ph="SELECT * FRO... bag" />
+            <marker date="1532576135500" expanded="true" signature="1240:1281" ph="SELECT * FRO... bag" />
+            <marker date="1532576135500" expanded="true" signature="1898:1933" ph="SELECT * FRO... item" />
+            <marker date="1532576135500" expanded="true" signature="1898:1954" ph="SELECT * FRO... item" />
           </folding>
         </state>
       </provider>
@@ -1568,6 +1526,28 @@
             <element signature="e#4049#4050#0" expanded="true" />
             <element signature="e#4106#4107#0" expanded="true" />
             <marker date="1532575697714" expanded="true" signature="625:669" ph="SELECT * FRO... item" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Weapon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="27" column="61" lean-forward="false" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1532576174608" expanded="true" signature="638:684" ph="SELECT * FRO... armor" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Armor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1532575778934" expanded="true" signature="497:542" ph="SELECT * FRO... armor" />
           </folding>
         </state>
       </provider>
@@ -1646,6 +1626,28 @@
             <marker date="1532576117264" expanded="true" signature="6274:6669" ph="UPDATE hero... " />
             <marker date="1532576117264" expanded="true" signature="6274:6685" ph="UPDATE hero... " />
             <marker date="1532576117264" expanded="true" signature="6274:6691" ph="UPDATE hero... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wearable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1532575697724" expanded="true" signature="572:620" ph="SELECT * FRO... wearable" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Accessory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1532575778941" expanded="true" signature="664:712" ph="SELECT * FRO... accesory" />
           </folding>
         </state>
       </provider>
