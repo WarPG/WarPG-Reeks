@@ -56,8 +56,9 @@ public class Mob {
         try {
             Class.forName("org.postgresql.Driver");
             Connection con = Connect.getConnection();
-            PreparedStatement stmt = con.prepareStatement("SELECT column FROM mob ORDER BY RANDOM() LIMIT 1 ");
+            PreparedStatement stmt = con.prepareStatement("SELECT * FROM mob ORDER BY RANDOM() LIMIT 1 ");
             ResultSet rs = stmt.executeQuery();
+            rs.next();
             Random r = new Random();
             name = rs.getCharacterStream("name").toString();
             health = 1000 + level*(rs.getInt("health"));
