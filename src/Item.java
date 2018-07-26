@@ -1,10 +1,11 @@
 public class Item {
 
-	private int price;
-	private int category;
-	private int dropRate;
-	private int wearType;
-	private String requirement;
+    protected int price;
+    protected int category;
+    protected int dropRate;
+    protected int wearType;
+    protected int id;
+    protected String requirement;
 
 	public Item(){
 
@@ -127,29 +128,21 @@ public class Item {
 	}
 
 	public boolean isArmor(){
-	    if (wearType < 4)
-	        return true;
-	    return false;
+        return wearType < 4;
     }
 
 	public boolean isWearable(){
-		if (wearType == 4)
-			return true;
-		return false;
-	}
+        return wearType == 4;
+    }
 
 
     public boolean isWeapon(){
-        if (wearType == 5)
-            return true;
-        return false;
+        return wearType == 5;
     }
 
 
     public boolean isAccessory(){
-        if ((wearType == 6) || (wearType == 7))
-            return true;
-        return false;
+        return (wearType == 6) || (wearType == 7);
     }
 
 }

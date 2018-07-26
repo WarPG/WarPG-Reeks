@@ -3,19 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5a4d0c5f-e05f-4e42-b979-e8cd92556ebe" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/warpg/Accessory.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/warpg/Armor.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/warpg/Bag.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/warpg/Consumable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/warpg/Item.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/warpg/Main.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/warpg/Mob.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/warpg/UserInterface$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/warpg/UserInterface$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/warpg/UserInterface.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/warpg/Weapon.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Armor.java" afterPath="$PROJECT_DIR$/src/Armor.java" />
       <change beforePath="$PROJECT_DIR$/src/Bag.java" afterPath="$PROJECT_DIR$/src/Bag.java" />
-      <change beforePath="$PROJECT_DIR$/src/Mob.java" afterPath="$PROJECT_DIR$/src/Mob.java" />
+      <change beforePath="$PROJECT_DIR$/src/Character.java" afterPath="$PROJECT_DIR$/src/Character.java" />
+      <change beforePath="$PROJECT_DIR$/src/Item.java" afterPath="$PROJECT_DIR$/src/Item.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +33,8 @@
       <file leaf-file-name="Character.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Character.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="153" column="22" lean-forward="true" selection-start-line="148" selection-start-column="13" selection-end-line="153" selection-end-column="22" />
+            <state relative-caret-position="120">
+              <caret line="236" column="78" lean-forward="false" selection-start-line="236" selection-start-column="78" selection-end-line="236" selection-end-column="78" />
               <folding>
                 <element signature="e#590#591#0" expanded="true" />
                 <element signature="e#613#614#0" expanded="true" />
@@ -99,21 +90,21 @@
                 <element signature="e#2060#2061#0" expanded="true" />
                 <element signature="e#2108#2109#0" expanded="true" />
                 <element signature="e#2148#2149#0" expanded="true" />
-                <marker date="1532565483521" expanded="true" signature="3401:3457" ph="SELECT * FRO... hero" />
-                <marker date="1532565483521" expanded="true" signature="3401:3459" ph="SELECT * FRO... hero" />
-                <marker date="1532565483521" expanded="true" signature="3401:3477" ph="SELECT * FRO... hero" />
-                <marker date="1532565483521" expanded="true" signature="4643:4841" ph="INSERT INTO hero... " />
-                <marker date="1532565483521" expanded="true" signature="4938:4994" ph="SELECT * FRO... hero" />
-                <marker date="1532565483521" expanded="true" signature="4938:4996" ph="SELECT * FRO... hero" />
-                <marker date="1532565483521" expanded="true" signature="4938:5014" ph="SELECT * FRO... hero" />
-                <marker date="1532565483521" expanded="true" signature="6279:6346" ph="UPDATE hero... " />
-                <marker date="1532565483521" expanded="true" signature="6279:6382" ph="UPDATE hero... " />
-                <marker date="1532565483521" expanded="true" signature="6279:6639" ph="UPDATE hero... " />
-                <marker date="1532565483521" expanded="true" signature="6279:6668" ph="UPDATE hero... " />
-                <marker date="1532565483521" expanded="true" signature="6279:6672" ph="UPDATE hero... " />
-                <marker date="1532565483521" expanded="true" signature="6279:6674" ph="UPDATE hero... " />
-                <marker date="1532565483521" expanded="true" signature="6279:6690" ph="UPDATE hero... " />
-                <marker date="1532565483521" expanded="true" signature="6279:6696" ph="UPDATE hero... " />
+                <marker date="1532569812945" expanded="true" signature="3401:3457" ph="SELECT * FRO... hero" />
+                <marker date="1532569812945" expanded="true" signature="3401:3459" ph="SELECT * FRO... hero" />
+                <marker date="1532569812945" expanded="true" signature="3401:3477" ph="SELECT * FRO... hero" />
+                <marker date="1532569812945" expanded="true" signature="4643:4841" ph="INSERT INTO hero... " />
+                <marker date="1532569812945" expanded="true" signature="4938:4994" ph="SELECT * FRO... hero" />
+                <marker date="1532569812945" expanded="true" signature="4938:4996" ph="SELECT * FRO... hero" />
+                <marker date="1532569812945" expanded="true" signature="4938:5014" ph="SELECT * FRO... hero" />
+                <marker date="1532569812945" expanded="true" signature="6279:6346" ph="UPDATE hero... " />
+                <marker date="1532569812945" expanded="true" signature="6279:6382" ph="UPDATE hero... " />
+                <marker date="1532569812945" expanded="true" signature="6279:6639" ph="UPDATE hero... " />
+                <marker date="1532569812945" expanded="true" signature="6279:6668" ph="UPDATE hero... " />
+                <marker date="1532569812945" expanded="true" signature="6279:6672" ph="UPDATE hero... " />
+                <marker date="1532569812945" expanded="true" signature="6279:6674" ph="UPDATE hero... " />
+                <marker date="1532569812945" expanded="true" signature="6279:6690" ph="UPDATE hero... " />
+                <marker date="1532569812945" expanded="true" signature="6279:6696" ph="UPDATE hero... " />
               </folding>
             </state>
           </provider>
@@ -133,10 +124,10 @@
         <entry file="file://$PROJECT_DIR$/src/Item.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding>
-                <element signature="e#602#603#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
+                <element signature="e#649#650#0" expanded="true" />
+                <element signature="e#671#672#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,8 +136,8 @@
       <file leaf-file-name="Armor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Armor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+            <state relative-caret-position="238">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -155,18 +146,18 @@
       <file leaf-file-name="Bag.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+            <state relative-caret-position="119">
+              <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1705#1706#0" expanded="true" />
-                <element signature="e#1727#1728#0" expanded="true" />
-                <element signature="e#1769#1770#0" expanded="true" />
-                <element signature="e#1800#1801#0" expanded="true" />
-                <marker date="1532568423632" expanded="true" signature="620:677" ph="SELECT * FRO... bag" />
-                <marker date="1532568423632" expanded="true" signature="620:687" ph="SELECT * FRO... bag" />
-                <marker date="1532568423632" expanded="true" signature="1239:1274" ph="SELECT * FRO... item" />
-                <marker date="1532568423632" expanded="true" signature="1239:1293" ph="SELECT * FRO... item" />
+                <element signature="e#1835#1836#0" expanded="true" />
+                <element signature="e#1866#1867#0" expanded="true" />
+                <element signature="e#1911#1912#0" expanded="true" />
+                <element signature="e#1951#1952#0" expanded="true" />
+                <marker date="1532569027537" expanded="true" signature="645:702" ph="SELECT * FRO... bag" />
+                <marker date="1532569027537" expanded="true" signature="645:714" ph="SELECT * FRO... bag" />
+                <marker date="1532569027537" expanded="true" signature="1327:1362" ph="SELECT * FRO... item" />
+                <marker date="1532569027537" expanded="true" signature="1327:1383" ph="SELECT * FRO... item" />
               </folding>
             </state>
           </provider>
@@ -210,8 +201,8 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            <state relative-caret-position="221">
+              <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -246,12 +237,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Connect.java" />
-        <option value="$PROJECT_DIR$/src/Armor.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/src/Character.java" />
         <option value="$PROJECT_DIR$/src/Mob.java" />
+        <option value="$PROJECT_DIR$/src/Item.java" />
         <option value="$PROJECT_DIR$/src/Bag.java" />
+        <option value="$PROJECT_DIR$/src/Character.java" />
+        <option value="$PROJECT_DIR$/src/Armor.java" />
       </list>
     </option>
   </component>
@@ -534,40 +526,47 @@
       <option name="project" value="LOCAL" />
       <updated>1532565489075</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Bag database connection added.">
+      <created>1532568447438</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1532568447438</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22732000" />
+    <option name="totallyTimeSpent" value="24224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5030257" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3223684" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5030257" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.4969743" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.4969743" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280507" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20045386" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -594,7 +593,6 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19472913" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -646,7 +644,8 @@
     <MESSAGE value="staph pls intellij" />
     <MESSAGE value="char pls" />
     <MESSAGE value="Get and update character fixed fingers crossed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get and update character fixed fingers crossed" />
+    <MESSAGE value="Bag database connection added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Bag database connection added." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -741,21 +740,21 @@
             <element signature="e#2060#2061#0" expanded="true" />
             <element signature="e#2108#2109#0" expanded="true" />
             <element signature="e#2148#2149#0" expanded="true" />
-            <marker date="1532565483521" expanded="true" signature="3401:3457" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="3401:3459" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="3401:3477" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4643:4841" ph="INSERT INTO hero... " />
-            <marker date="1532565483521" expanded="true" signature="4938:4994" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4938:4996" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4938:5014" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="6279:6346" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6382" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6639" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6668" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6672" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6674" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6690" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6696" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="3401:3457" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="3401:3459" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="3401:3477" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4643:4841" ph="INSERT INTO hero... " />
+            <marker date="1532569812945" expanded="true" signature="4938:4994" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4938:4996" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4938:5014" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="6279:6346" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6382" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6639" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6668" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6672" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6674" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6690" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6696" ph="UPDATE hero... " />
           </folding>
         </state>
       </provider>
@@ -827,21 +826,21 @@
             <element signature="e#2060#2061#0" expanded="true" />
             <element signature="e#2108#2109#0" expanded="true" />
             <element signature="e#2148#2149#0" expanded="true" />
-            <marker date="1532565483521" expanded="true" signature="3401:3457" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="3401:3459" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="3401:3477" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4643:4841" ph="INSERT INTO hero... " />
-            <marker date="1532565483521" expanded="true" signature="4938:4994" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4938:4996" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4938:5014" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="6279:6346" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6382" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6639" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6668" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6672" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6674" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6690" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6696" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="3401:3457" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="3401:3459" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="3401:3477" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4643:4841" ph="INSERT INTO hero... " />
+            <marker date="1532569812945" expanded="true" signature="4938:4994" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4938:4996" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4938:5014" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="6279:6346" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6382" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6639" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6668" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6672" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6674" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6690" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6696" ph="UPDATE hero... " />
           </folding>
         </state>
       </provider>
@@ -851,8 +850,8 @@
         <state relative-caret-position="170">
           <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -879,14 +878,14 @@
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1705#1706#0" expanded="true" />
-            <element signature="e#1727#1728#0" expanded="true" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <marker date="1532568423632" expanded="true" signature="620:677" ph="SELECT * FRO... bag" />
-            <marker date="1532568423632" expanded="true" signature="620:687" ph="SELECT * FRO... bag" />
-            <marker date="1532568423632" expanded="true" signature="1239:1274" ph="SELECT * FRO... item" />
-            <marker date="1532568423632" expanded="true" signature="1239:1293" ph="SELECT * FRO... item" />
+            <element signature="e#1835#1836#0" expanded="true" />
+            <element signature="e#1866#1867#0" expanded="true" />
+            <element signature="e#1911#1912#0" expanded="true" />
+            <element signature="e#1951#1952#0" expanded="true" />
+            <marker date="1532569027537" expanded="true" signature="645:702" ph="SELECT * FRO... bag" />
+            <marker date="1532569027537" expanded="true" signature="645:714" ph="SELECT * FRO... bag" />
+            <marker date="1532569027537" expanded="true" signature="1327:1362" ph="SELECT * FRO... item" />
+            <marker date="1532569027537" expanded="true" signature="1327:1383" ph="SELECT * FRO... item" />
           </folding>
         </state>
       </provider>
@@ -995,21 +994,21 @@
             <element signature="e#2060#2061#0" expanded="true" />
             <element signature="e#2108#2109#0" expanded="true" />
             <element signature="e#2148#2149#0" expanded="true" />
-            <marker date="1532565483521" expanded="true" signature="3401:3457" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="3401:3459" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="3401:3477" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4643:4841" ph="INSERT INTO hero... " />
-            <marker date="1532565483521" expanded="true" signature="4938:4994" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4938:4996" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4938:5014" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="6279:6346" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6382" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6639" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6668" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6672" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6674" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6690" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6696" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="3401:3457" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="3401:3459" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="3401:3477" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4643:4841" ph="INSERT INTO hero... " />
+            <marker date="1532569812945" expanded="true" signature="4938:4994" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4938:4996" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4938:5014" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="6279:6346" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6382" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6639" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6668" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6672" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6674" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6690" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6696" ph="UPDATE hero... " />
           </folding>
         </state>
       </provider>
@@ -1019,8 +1018,8 @@
         <state relative-caret-position="272">
           <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1039,14 +1038,14 @@
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1705#1706#0" expanded="true" />
-            <element signature="e#1727#1728#0" expanded="true" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <marker date="1532568423632" expanded="true" signature="620:677" ph="SELECT * FRO... bag" />
-            <marker date="1532568423632" expanded="true" signature="620:687" ph="SELECT * FRO... bag" />
-            <marker date="1532568423632" expanded="true" signature="1239:1274" ph="SELECT * FRO... item" />
-            <marker date="1532568423632" expanded="true" signature="1239:1293" ph="SELECT * FRO... item" />
+            <element signature="e#1835#1836#0" expanded="true" />
+            <element signature="e#1866#1867#0" expanded="true" />
+            <element signature="e#1911#1912#0" expanded="true" />
+            <element signature="e#1951#1952#0" expanded="true" />
+            <marker date="1532569027537" expanded="true" signature="645:702" ph="SELECT * FRO... bag" />
+            <marker date="1532569027537" expanded="true" signature="645:714" ph="SELECT * FRO... bag" />
+            <marker date="1532569027537" expanded="true" signature="1327:1362" ph="SELECT * FRO... item" />
+            <marker date="1532569027537" expanded="true" signature="1327:1383" ph="SELECT * FRO... item" />
           </folding>
         </state>
       </provider>
@@ -1155,21 +1154,21 @@
             <element signature="e#2060#2061#0" expanded="true" />
             <element signature="e#2108#2109#0" expanded="true" />
             <element signature="e#2148#2149#0" expanded="true" />
-            <marker date="1532565483521" expanded="true" signature="3401:3457" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="3401:3459" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="3401:3477" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4643:4841" ph="INSERT INTO hero... " />
-            <marker date="1532565483521" expanded="true" signature="4938:4994" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4938:4996" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4938:5014" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="6279:6346" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6382" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6639" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6668" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6672" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6674" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6690" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6696" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="3401:3457" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="3401:3459" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="3401:3477" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4643:4841" ph="INSERT INTO hero... " />
+            <marker date="1532569812945" expanded="true" signature="4938:4994" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4938:4996" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4938:5014" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="6279:6346" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6382" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6639" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6668" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6672" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6674" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6690" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6696" ph="UPDATE hero... " />
           </folding>
         </state>
       </provider>
@@ -1252,21 +1251,21 @@
             <element signature="e#2060#2061#0" expanded="true" />
             <element signature="e#2108#2109#0" expanded="true" />
             <element signature="e#2148#2149#0" expanded="true" />
-            <marker date="1532565483521" expanded="true" signature="3401:3457" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="3401:3459" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="3401:3477" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4643:4841" ph="INSERT INTO hero... " />
-            <marker date="1532565483521" expanded="true" signature="4938:4994" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4938:4996" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4938:5014" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="6279:6346" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6382" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6639" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6668" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6672" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6674" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6690" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6696" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="3401:3457" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="3401:3459" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="3401:3477" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4643:4841" ph="INSERT INTO hero... " />
+            <marker date="1532569812945" expanded="true" signature="4938:4994" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4938:4996" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4938:5014" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="6279:6346" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6382" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6639" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6668" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6672" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6674" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6690" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6696" ph="UPDATE hero... " />
           </folding>
         </state>
       </provider>
@@ -1390,21 +1389,21 @@
             <element signature="e#2060#2061#0" expanded="true" />
             <element signature="e#2108#2109#0" expanded="true" />
             <element signature="e#2148#2149#0" expanded="true" />
-            <marker date="1532565483521" expanded="true" signature="3401:3457" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="3401:3459" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="3401:3477" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4643:4841" ph="INSERT INTO hero... " />
-            <marker date="1532565483521" expanded="true" signature="4938:4994" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4938:4996" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4938:5014" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="6279:6346" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6382" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6639" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6668" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6672" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6674" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6690" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6696" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="3401:3457" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="3401:3459" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="3401:3477" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4643:4841" ph="INSERT INTO hero... " />
+            <marker date="1532569812945" expanded="true" signature="4938:4994" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4938:4996" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4938:5014" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="6279:6346" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6382" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6639" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6668" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6672" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6674" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6690" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6696" ph="UPDATE hero... " />
           </folding>
         </state>
       </provider>
@@ -1466,8 +1465,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="221">
+          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1480,10 +1479,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="60" column="22" lean-forward="false" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+          <folding>
+            <marker date="1532568162569" expanded="true" signature="1245:1288" ph="SELECT colum... " />
+            <marker date="1532568162569" expanded="true" signature="1245:1289" ph="SELECT * FRO... mob" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="159" column="20" lean-forward="false" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1835#1836#0" expanded="true" />
+            <element signature="e#1866#1867#0" expanded="true" />
+            <element signature="e#1911#1912#0" expanded="true" />
+            <element signature="e#1951#1952#0" expanded="true" />
+            <marker date="1532569027537" expanded="true" signature="645:702" ph="SELECT * FRO... bag" />
+            <marker date="1532569027537" expanded="true" signature="645:714" ph="SELECT * FRO... bag" />
+            <marker date="1532569027537" expanded="true" signature="1327:1362" ph="SELECT * FRO... item" />
+            <marker date="1532569027537" expanded="true" signature="1327:1383" ph="SELECT * FRO... item" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Character.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="153" column="22" lean-forward="true" selection-start-line="148" selection-start-column="13" selection-end-line="153" selection-end-column="22" />
+        <state relative-caret-position="120">
+          <caret line="236" column="78" lean-forward="false" selection-start-line="236" selection-start-column="78" selection-end-line="236" selection-end-column="78" />
           <folding>
             <element signature="e#590#591#0" expanded="true" />
             <element signature="e#613#614#0" expanded="true" />
@@ -1539,77 +1575,40 @@
             <element signature="e#2060#2061#0" expanded="true" />
             <element signature="e#2108#2109#0" expanded="true" />
             <element signature="e#2148#2149#0" expanded="true" />
-            <marker date="1532565483521" expanded="true" signature="3401:3457" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="3401:3459" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="3401:3477" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4643:4841" ph="INSERT INTO hero... " />
-            <marker date="1532565483521" expanded="true" signature="4938:4994" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4938:4996" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="4938:5014" ph="SELECT * FRO... hero" />
-            <marker date="1532565483521" expanded="true" signature="6279:6346" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6382" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6639" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6668" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6672" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6674" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6690" ph="UPDATE hero... " />
-            <marker date="1532565483521" expanded="true" signature="6279:6696" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="3401:3457" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="3401:3459" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="3401:3477" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4643:4841" ph="INSERT INTO hero... " />
+            <marker date="1532569812945" expanded="true" signature="4938:4994" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4938:4996" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="4938:5014" ph="SELECT * FRO... hero" />
+            <marker date="1532569812945" expanded="true" signature="6279:6346" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6382" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6639" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6668" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6672" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6674" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6690" ph="UPDATE hero... " />
+            <marker date="1532569812945" expanded="true" signature="6279:6696" ph="UPDATE hero... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="60" column="22" lean-forward="false" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
-          <folding>
-            <marker date="1532568162569" expanded="true" signature="1245:1288" ph="SELECT colum... " />
-            <marker date="1532568162569" expanded="true" signature="1245:1289" ph="SELECT * FRO... mob" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="159" column="20" lean-forward="false" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Armor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        <state relative-caret-position="238">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1705#1706#0" expanded="true" />
-            <element signature="e#1727#1728#0" expanded="true" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <marker date="1532568423632" expanded="true" signature="620:677" ph="SELECT * FRO... bag" />
-            <marker date="1532568423632" expanded="true" signature="620:687" ph="SELECT * FRO... bag" />
-            <marker date="1532568423632" expanded="true" signature="1239:1274" ph="SELECT * FRO... item" />
-            <marker date="1532568423632" expanded="true" signature="1239:1293" ph="SELECT * FRO... item" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding>
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
           </folding>
         </state>
       </provider>

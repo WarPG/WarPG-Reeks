@@ -234,9 +234,9 @@ public class Character {
         ArrayList<Item> items = bg.getItems();
 
         if (items.get(item.getWearType()) != null) {
-            setDefense(getDefense() - ((Armor) items.get(item.getWearType())).getDefence() + item.getDefence());
+            setDefense(getDefense() - ((Armor) items.get(item.getWearType())).getDefense() + item.getDefense());
         } else {
-            setDefense(getDefense() + item.getDefence());
+            setDefense(getDefense() + item.getDefense());
 
         }
     }

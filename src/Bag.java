@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Bag{
+public class Bag extends Item {
 
     private int capacity;
     private ArrayList<Item> items;
@@ -15,7 +15,7 @@ public class Bag{
     }
 
 
-    public ArrayList<Item> getItems(String id) {
+    public ArrayList<Item> getItems() {
         try {
             items.clear();
             int[] item_ids = new int[8];
@@ -33,10 +33,12 @@ public class Bag{
             item_ids[6] = rs.getInt("slot7");
             item_ids[7] = rs.getInt("slot8");
             for (int i = 0; i < 8; i++) {
-                PreparedStatement stmt2 = Objects.requireNonNull(con).prepareStatement("SELECT * FROM item WHERE item_id=\'" + item_ids[i] + "\'");
-                ResultSet rs2 = stmt2.executeQuery();
-                rs2.next();
-                items.add(new Item(rs2.getInt("price"), rs2.getInt("category"), rs2.getInt("drop_rate"), rs2.getInt("weartype"), rs2.getString("requirement")));
+                if (item_ids != null) {
+                    PreparedStatement stmt2 = Objects.requireNonNull(con).prepareStatement("SELECT * FROM item WHERE item_id=\'" + item_ids[i] + "\'");
+                    ResultSet rs2 = stmt2.executeQuery();
+                    rs2.next();
+                    items.add(new Item(rs2.getInt("price"), rs2.getInt("category"), rs2.getInt("drop_rate"), rs2.getInt("weartype"), rs2.getString("requirement")));
+                }
             }
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
