@@ -21,7 +21,7 @@ public class Bag extends Item {
             int[] item_ids = new int[8];
             Class.forName("org.postgresql.Driver");
             Connection con = Connect.getConnection();
-            PreparedStatement stmt = Objects.requireNonNull(con).prepareStatement("SELECT slot1,slot2,slot3,slot4,slot5 FROM bag WHERE id=\'" + id + "\'");
+            PreparedStatement stmt = Objects.requireNonNull(con).prepareStatement("SELECT * FROM bag WHERE id=\'" + id + "\'");
             ResultSet rs = stmt.executeQuery();
             rs.next();
             item_ids[0] = rs.getInt("slot1");

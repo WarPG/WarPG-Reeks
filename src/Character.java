@@ -182,7 +182,7 @@ public class Character {
             Class.forName("org.postgresql.Driver");
             Connection con = Connect.getConnection();
             PreparedStatement stmt = Objects.requireNonNull(con).prepareStatement("INSERT INTO hero (id,password,name,dexterity,experience,health,defense,hit_points,gold,charisma,attack,strength,luck)VALUES (\'" + id + "\',\'" + password + "\',\'" + name + "\',1,0,1,1,1,0,1,1,1,1)");
-            stmt.executeQuery();
+            stmt.execute();
             PreparedStatement stmt2 = con.prepareStatement("SELECT * FROM hero WHERE id=\'" + id + "\' AND password=\'" + password + "\'");
             ResultSet rs = stmt2.executeQuery();
             rs.next();
@@ -223,7 +223,7 @@ public class Character {
             stmt = Objects.requireNonNull(con).prepareStatement("UPDATE hero SET dexterity = " + character.dexterity + ",experience=" + character.experience + ",health=" + character.health + ",defense=" + character.defense + ",hit_points=" + character.hitPoints +
                     ",gold=" + character.gold + ",charisma=" + character.charisma + ",attack=" + character.attack + " ,strength=" + character.strength + " ,luck=" + character.luck + "  WHERE id=\'" + character.id + "\'");
 
-            stmt.executeQuery();
+            stmt.execute();
         } catch (SQLException e) {
             e.printStackTrace();
         }
